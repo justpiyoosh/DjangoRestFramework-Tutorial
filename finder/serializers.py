@@ -4,4 +4,4 @@ from rest_framework import serializers
 class CasinoSerializer(serializers.ModelSerializer):
     class Meta:
         model = Casino
-        field = ('id' , 'name' , 'address')
+        fields = '__all__'

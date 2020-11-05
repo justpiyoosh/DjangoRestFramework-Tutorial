@@ -15,7 +15,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from finder.views import ListCreateCasinos 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('api/casinos',ListCreateCasinos.as_view() , name = 'list_casinos'),
 ]
